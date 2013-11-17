@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<!--<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes">-->
+        
+        <title>Darul Islah</title>
+		
+        <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        <link media="screen" rel="stylesheet" href="css/reboot.css" />	        
+        
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	</head>
+	<body>
+        
+        <header>
+            <div class="banner center">
+                <h1><a href="http://darul-islah.com">Darul-Islah</a></h1>
+                <nav class="main-menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#events">Events</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <section id="course">
+        	<div class="center">
+        		<h2>Al-‘Aqida Al-Tahawiyyah - Part Of The Sacred Scrolls Series</h2>
+        		<p>
+        			Noor-uz-Zamaan academy are honoured to hold a two-day course on Al-‘Aqida Al-Tahawiyyah under Shaykh Abul Hasan Hussain Ahmed (Hafidhahullah). A reading of Al-Araba’in Al-Nawawi and Awa’il Al-Sumbuliyya will also be done inshaAllah. Ijaza will granted for all three books Inshallah.
+        		</p>
+        		<p>
+        			Students (male or female) from across the globe will get the opportunity to benefit immensely from this structured course.
+        		</p>
+        	</div>	    
+        </section>
+        
+        <section id="information" class="bg-grey">
+        	<div class="center">
+        		<h2>Course Information</h2>
+        		
+        		
+        		
+        		
+        	</div>	 
+        </section>
+        
+        <section id="testimonials">
+        	<div class="center">
+        		<h2>Testimonials</h2>
+        		
+        		<p class="italic">"Shaykh Abul Hasan Hussain Ahmed is a gem amongst the scholars living in the UK. This lowly servant of Allah had the privilege of studying 'Aqida and Hadith under the Shaykh and has benefitted tremendously. I would highly recommend everyone to enrol and take maximum benefit from the Shaykh."</p>
+        		<p>Masum, Labbayk Nasheeds</p>
+
+				<p class="italic">"I would encourage these Aqida courses by Shaykh Abul Hasan Hussain Ahmad. His research and insight is extensive in this field. May Allah spread his benefit."</p>
+				<p>Mufti Abdur Rahman Ibn Yusuf Mangera<br>Imam & Author - Masjid e Quba/White Thread Press, London, UK</p>
+
+				<p class="italic">
+					"Shaykh Dr. Abul Hasan Hussain Ahmed (hafidhahullah) is a truly amazing scholar who has great insight - especially in areas related to 'aqida and hadith. I have personally benefitted from Shaykh's profound knowledge and in-depth research. I sincerely advise everyone to attend this course and benefit from this true gem of a scholar, who has dedicated his life to the sacred sciences.
+					'Aqida (Islamic beliefs) is a very important area which every Muslim must study in order to know what he/she must believe, along with those beliefs which should not be held by any Muslim, and I can think of nobody better to study this subject with than a specialist in this field such as the noble Shaykh."
+					Make sure you attend!"
+				</p>
+				<p>Mufti Asad Waqas<br>Madni Dawah Academy and Imam of Masjid Usman Ghani RA, Brierfield, Lancashire, UK</p>
+        		
+        		
+        	</div>	    
+        </section>
+        
+        
+        <footer id="contact">
+            <div class="center">
+                <h2>Contact</h2>
+                <div class="contact-info">
+                    <address>
+                        <strong>Darul Islah Wattarbiyah</strong>
+                        <br>
+                        63A Colne Road
+                        <br>
+                        Burnley
+                        <br>
+                        BB10 1LJ
+                        <br>
+                        Lancashire
+                        <br>
+                        United Kingdom
+                    </address>
+                </div>
+                <div class="contact">
+                    <strong>Email:</strong><br>admin@darul-islah.com<br><br>
+                    <strong>Office</strong><em>(Mon-Fri: 5pm - 6pm):</em><br> 01282 83549<br><br>
+                    <strong>Principal (urdu speaking only):</strong><br>Maulana Abdur Razak 07813 696360<br><br>
+                    <strong>Administrator:</strong><br>Maulana Inayat Ullah 07870 12343<br><br>
+                    <strong>Head Teacher:</strong><br>Maulana Firasat Ullah 07988 738141<br><br>
+                </div>
+                <div id="map-canvas">
+                </div>
+            </div>
+            
+        </footer>
+        
+        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAdmV_iY0m0PXE5KUP9Y7oAeNcjNblhE4g&sensor=false"></script>
+        <script type="text/javascript" src="js/tweet.js"></script>
+		<script type='text/javascript'>
+            
+            function initialise() {
+				var latlng = new google.maps.LatLng(53.798648, -2.238057);
+				var myOptions = {
+					zoom : 16,
+					center : latlng,
+					mapTypeId : google.maps.MapTypeId.ROADMAP
+				};
+				var map = new google.maps.Map(document.getElementById("map-canvas"), myOptions);
+
+				var marker = new google.maps.Marker({
+					position : latlng,
+					map : map,
+					title : "Darul Islah Wattarbiyah"
+				});
+			}
+            
+            
+            $(document).ready(function() {
+                initialise();                
+			});
+	    
+        </script>
+        
+    </body>
+</html>
