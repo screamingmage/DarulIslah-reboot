@@ -49,7 +49,6 @@ h1 a {
 nav.main-menu {
     display: inline-block;
     height: 60px;
-    min-width: 480px;
 }
 
 ul {
@@ -89,10 +88,8 @@ section#hero {
     position: relative;
 }
 
-
 .metroTile {
-    max-width: 50%;
-    min-width: 480px;
+    width: 45%;
     padding: 10px;
 }
 
@@ -103,8 +100,37 @@ section#hero {
     text-align: center;
 }
 
+.swissTile {
+    color: white;
+    display: table-cell;
+    height: 350px;
+    padding: 10px;
+    text-align: middle;
+    vertical-align:middle;
+}
+
 .greenTile {
-	background-color: #73C27D;
+	background-color: #2ecc71;
+}
+
+.blueTile {
+    background-color: #3498db;
+}
+
+.amesthystTile {
+    background-color: #9b59b6;
+}
+
+.orangeTile {
+    background-color: #f39c12;
+}
+
+.midnightTile {
+    background-color: #2c3e50;
+}
+
+.seaTile {
+    background-color: #16a085;
 }
 
 section a {
@@ -128,10 +154,13 @@ section a.call-to-action {
 }
 
 .images {
-    background: url(../img/hall.png) center;
+    background: url(../img/hall.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     height: 500px;
     left:0;
-    min-width: 480px;
     position: relative;    
     width: 100%;
 }
@@ -186,25 +215,106 @@ section a.call-to-action {
     background-color: #ebeae9;
 }
 
+.bg-asphalt {
+    background-color: #364c62;
+    color: white;
+}
+
+.bg-register {
+    background-color: #1abc9c;
+    color: white;    
+}
+
 p.italic {
 	color: blue;
 	font-style: italic;
-	padding: 10px;
 }
 
+.row {
+    max-width: 100%;
+}
+
+.column {
+    display: inline-block;
+    padding-right: 20px;
+    vertical-align: top;
+    width: 30%;    
+}
+
+#map-canvas {
+    height: 300px;
+}
+
+address {
+    font-style: normal;
+}
 
 footer {
     background-color: #190e08;
     color: white;
 }
 
-.contact-info, .contact, #map-canvas {
-    display:inline-block;
-    font-style:normal;
-    vertical-align: top;
-    width: 400px;
+@media(max-width: 1238px) {
+    .center {
+        padding: 0px 40px 0px 40px;    
+    }
+
+    nav.main-menu {
+        display: none;
+    }
 }
 
-#map-canvas {
-    height: 300px;
+@media(max-width: 1080px) {
+
+    .center {
+        padding: 0px 20px 0px 20px;
+    }
+
+    .column {
+        display: normal;
+        margin-bottom: 20px;
+        padding: 0px 20px 20px 0px;
+        width: 95%;   
+    } 
+
+    h1 {
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    .infoTile {
+        display: normal;
+    }
+
+    nav.main-menu {
+        display: none;
+    }
+
+    .metroTile {
+        display: normal;
+        max-width: 100%;
+        width: 95%;
+    }
+
+    .navigation {
+        height: 50px;
+    }
+
+    section#hero {
+        width: 100%;
+    }
+
+    .swissTile {
+        padding: 40px 0px 40px 20px;
+    }
+
+    .welcome-panel {
+        width: 90%;    
+    }
+}
+
+@media(max-width: 480px) {
+    h1 {
+        background : url(../img/header-logo-black-no-margin.png) no-repeat 0 0;     
+    }
 }
